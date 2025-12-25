@@ -133,3 +133,31 @@ button:hover {
 .bar-fill.bearish, .bar-fill.negative { background-color: #ef4444; }
 .bar-fill.neutral { background-color: #94a3b8; }
 .bar-fill.bullish, .bar-fill.positive { background-color: #22c55e; }
+
+/* New styles for Ticker inputs */
+.input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+select {
+    flex: 1;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: transparent;
+}
+
+.news-item:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}

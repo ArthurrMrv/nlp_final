@@ -16,20 +16,50 @@
         </header>
 
         <main>
+            <!-- Custom Text Section -->
             <div class="card">
-                <textarea id="inputText" placeholder="Enter financial news text here (e.g., 'Stocks soared today due to positive earnings reports...')" rows="6"></textarea>
+                <h2>Custom Text</h2>
+                <textarea id="inputText" placeholder="Enter financial news text here..." rows="4"></textarea>
                 <div class="actions">
-                    <button id="analyzeBtn">Analyze Sentiment</button>
+                    <button id="analyzeBtn">Analyze Text</button>
+                </div>
+                
+                <div id="resultArea" class="result-area hidden">
+                    <h3>Result</h3>
+                    <div id="loader" class="loader hidden"></div>
+                    <div id="sentimentDisplay" class="sentiment-display"></div>
                 </div>
             </div>
 
-            <div id="resultArea" class="result-area hidden">
-                <h3>Analysis Result</h3>
-                <div id="loader" class="loader hidden"></div>
-                <div id="sentimentDisplay" class="sentiment-display">
-                    <!-- Results will be injected here -->
+            <!-- Ticker Section -->
+            <div class="card">
+                <h2>Stock News</h2>
+                <p style="color: #64748b; margin-bottom: 1rem;">Select a ticker to analyze its latest news.</p>
+                
+                <div class="input-group">
+                    <select id="tickerSelect">
+                        <option value="AAPL">Apple (AAPL)</option>
+                        <option value="MSFT">Microsoft (MSFT)</option>
+                        <option value="GOOGL">Google (GOOGL)</option>
+                        <option value="AMZN">Amazon (AMZN)</option>
+                        <option value="TSLA">Tesla (TSLA)</option>
+                        <option value="NVDA">NVIDIA (NVDA)</option>
+                        <option value="META">Meta (META)</option>
+                        <option value="JPM">JPMorgan (JPM)</option>
+                        <option value="BAC">Bank of America (BAC)</option>
+                        <option value="BTC-USD">Bitcoin (BTC-USD)</option>
+                        <option value="ETH-USD">Ethereum (ETH-USD)</option>
+                    </select>
+                    <button id="analyzeTickerBtn">Analyze News</button>
+                </div>
+
+                <div id="tickerResultArea" class="result-area hidden">
+                    <h3>Latest News Analysis</h3>
+                    <div id="tickerLoader" class="loader hidden"></div>
+                    <div id="tickerDisplay" class="sentiment-display"></div>
                 </div>
             </div>
+
         </main>
     </div>
     <script src="script.js"></script>
