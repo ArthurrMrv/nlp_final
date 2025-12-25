@@ -1,0 +1,9 @@
+.*
+
+processed_data.jsonl
+
+!.env.example
+!.gitignore
+
+pyproject.toml
+uv.lock

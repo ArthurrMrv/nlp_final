@@ -1,0 +1,11 @@
+nbformat>=4.2.0 
+datasets 
+transformers
+torch 
+requests 
+pandas 
+scikit-learn 
+tqdm 
+matplotlib 
+plotly
+sentencepiece

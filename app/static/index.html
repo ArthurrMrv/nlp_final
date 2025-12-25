@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using a simple font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Financial News Sentiment</h1>
+            <p class="subtitle">Powered by ArthurMrv/deberta-v3-ft</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <textarea id="inputText" placeholder="Enter financial news text here (e.g., 'Stocks soared today due to positive earnings reports...')" rows="6"></textarea>
+                <div class="actions">
+                    <button id="analyzeBtn">Analyze Sentiment</button>
+                </div>
+            </div>
+
+            <div id="resultArea" class="result-area hidden">
+                <h3>Analysis Result</h3>
+                <div id="loader" class="loader hidden"></div>
+                <div id="sentimentDisplay" class="sentiment-display">
+                    <!-- Results will be injected here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
