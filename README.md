@@ -31,7 +31,7 @@ To set up the development environment locally:
 ```bash
 # Clone the repository
 git clone <https://github.com/ArthurrMrv/nlp_final.git>
-cd <final_project>
+cd final_project
 
 # Create and activate a virtual environment (optional but recommended)
 python -m venv .venv
