@@ -17,6 +17,14 @@ My approach involves:
 
 This repository contains the research notebooks used for training and analysis, as well as a production-ready Dockerized application for real-time inference.
 
+As seen bellow the before / after confusion matrix reflects a clear improvement in F1 metrics.
+
+<p align="center">
+  <img src="img/before_matrix.png" alt="Confusion matrix before" width="340" style="display: inline-block;"/>
+  <img src="img/after_matrix.png" alt="Confusion matrix after" width="340" style="display: inline-block;"/>
+</p>
+
+
 ## Installation
 
 ### Prerequisites
