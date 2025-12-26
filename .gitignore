@@ -1,1 +1,14 @@
 *.env
+
+
+uv.lock
+pyproject.toml
+
+project.tex
+main.py
+
+.python-version
+.DS_Store
+
+project*
+!project.pdf
